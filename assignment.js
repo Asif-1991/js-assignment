@@ -39,3 +39,17 @@ function hotelCost(days){
 }
 var total = hotelCost(40);
 console.log(total);
+
+// megaFriend
+function megaFriend(names){
+    var larger = names[0];
+    for(var i = 0; i > names.length; i++){
+        var element = names[i];
+        if(element > larger){
+            larger = element;
+        }
+    }
+    return larger;
+}
+var largestName = megaFriend(["Mashrur", "Asif",  "Tnvir", "Mnna"]);
+console.log(largestName);
